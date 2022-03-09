@@ -5,7 +5,7 @@
     "require": {
         "php": ">=7.0"
     },
-    "license": "Appache",
+    "license": "Appache-1.0",
     "authors": [
         {
             "name": "dx067870",
