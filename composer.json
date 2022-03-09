@@ -1,0 +1,22 @@
+{
+    "name": "hicker/test",
+    "description": "test",
+    "type": "1",
+    "require": {
+        "php": ">=7.0"
+    },
+    "license": "Appache",
+    "authors": [
+        {
+            "name": "dx067870",
+            "email": "yge5shop@sina.com"
+        }
+    ],
+
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4":{
+            "Hiker\\": "hiker/src/"
+        }
+    }
+}
