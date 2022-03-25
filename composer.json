@@ -16,7 +16,9 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4":{
-            "Hiker\\": "hiker/src/"
+            "Hiker\\": "hiker/src/",
+            "Hiker/Pool\\": "hiker/pool",
+            "Hiker/Test\\": "hiker/test"
         }
     }
 }

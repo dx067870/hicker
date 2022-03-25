@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Hiker\\' => array($baseDir . '/hiker/src'),
+    'Hiker/Pool\\' => array($baseDir . '/hiker/pool'),
 );

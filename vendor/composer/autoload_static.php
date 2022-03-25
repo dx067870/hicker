@@ -10,6 +10,7 @@ class ComposerStaticInit12ea81db26730f16a636806284cc79b0
         'H' => 
         array (
             'Hiker\\' => 6,
+            'Hiker/Pool\\' => 11,
         ),
     );
 
@@ -18,6 +19,14 @@ class ComposerStaticInit12ea81db26730f16a636806284cc79b0
         array (
             0 => __DIR__ . '/../..' . '/hiker/src',
         ),
+        'Hiker/Pool\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/hiker/pool',
+        ),
+    );
+
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -25,6 +34,7 @@ class ComposerStaticInit12ea81db26730f16a636806284cc79b0
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit12ea81db26730f16a636806284cc79b0::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit12ea81db26730f16a636806284cc79b0::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit12ea81db26730f16a636806284cc79b0::$classMap;
 
         }, null, ClassLoader::class);
     }
